@@ -54,8 +54,8 @@ email.mail_to = sys.argv[1]
 email.mail_subject = sys.argv[2]
 email.mail_server = zbx_ex_setting.email_smtp
 
-email.mail_head = '\n'.join(body[0:2])
-email.mail_footer = '\n'.join(body[3:-1])
+email.mail_head = '<br>\n'.join(body[0:line_count - 1])
+email.mail_footer = '<br>\n'.join(body[line_count + 1:-1])
 email.mail_graph = zbx_image.res_img
 email.mail_url = zbx_image.res_url
 
