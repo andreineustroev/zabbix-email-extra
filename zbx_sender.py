@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import smtplib
+import os
 from jinja2 import Template
 
 from email.mime.multipart import MIMEMultipart
@@ -29,7 +30,7 @@ class SendEmail(object):
 
 		text = self.mail_head + self.mail_footer
 
-		template_file = open('./email_template.j2')
+		template_file = open(os.getcwd + './email_template.j2')
 		template_text = ''
 		for lines in template_file:
 			template_text = template_text + lines
