@@ -1,13 +1,13 @@
 # zabbix-email-extra
 Exta email notification from zabbix
 
-#Description
+# Description
 
 Script for pretty formated email from zabbix-server, with graph.
 ![Example mail](https://habrastorage.org/web/3b0/60d/a27/3b060da2775e42aaba59bdf150450181.png)
 Used adaptive mail template HTMLemail.
 
-#Instalation
+# Instalation
 
 1. Install python3.
 1. Install python extensions: 
