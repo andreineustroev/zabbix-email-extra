@@ -13,3 +13,6 @@ email_from = 'zabbix@example.org'
 email_username = 'zabbix@example.org'
 email_password = 'password'
 email_smtp = 'mail.example.org'
+
+#Template settings
+company = 'Main company'

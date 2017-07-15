@@ -39,7 +39,7 @@ class SendEmail(object):
 		html = t.render(zabbix_name='Test_Zabbix',
 								trigger_text=self.mail_head, graph=self.mail_graph,
 								trigger_url=self.mail_url, trigger_details=self.mail_footer,
-								company='Company Artsofte')
+								company=self.company)
 
 		part1 = MIMEText(text, 'plain', 'utf-8')
 		part2 = MIMEText(html, 'html', 'utf-8')
