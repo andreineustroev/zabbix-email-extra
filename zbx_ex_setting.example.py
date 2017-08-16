@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 #Zabbix server settings
-zbx_server = 'http://zabbix.example.org/zabbix'  # zabbix server full url
+zbx_server = 'https://zabbix.example.org/zabbix'  # zabbix server full url
 zbx_api_user = 'api'
 zbx_api_pass = 'apipass'
 zbx_graph_width = '600'
