@@ -52,10 +52,9 @@ class ZabbixImage(object):
 		if res_code == 404:
 			print_message("can`t get image from '{0}'".format(zbx_img_url))
 			return False
-			
-		self.res_img = '<img src="data:image/png;base64,' + base64.b64encode(res.content) + '" alt=graph>'
+
+		self.res_img = '<img src="data:image/png;base64,' + base64.b64encode(res.content).decode() + '" alt=graph>'
 		self.res_url = zbx_url_url
-		
 
 def print_message(string):
     string = str(string) + "\n"

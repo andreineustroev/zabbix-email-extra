@@ -1,5 +1,3 @@
 #/bin/bash
-
-pip install py-zabbix
 pip install jinja2
 pip install requests

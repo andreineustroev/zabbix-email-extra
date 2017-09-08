@@ -1,21 +1,13 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import sys
-from zabbix.api import ZabbixAPI
-
 import zbx_ex_setting
 from zbx_api import ZabbixImage
 from zbx_sender import SendEmail
 
-reload(sys)  
-sys.setdefaultencoding('utf8')
-
 server = zbx_ex_setting.zbx_server
 api_user = zbx_ex_setting.zbx_api_user
 api_pass = zbx_ex_setting.zbx_api_pass
-
-zapi = ZabbixAPI(url=server, user=api_user, password=api_pass)
-print("Connect to zabbix API version %s" % zapi.api_version())
 
 zbx_image = ZabbixImage(server=server, api_user=api_user, api_pass=api_pass)
 try:
