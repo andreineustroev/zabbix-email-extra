@@ -11,7 +11,6 @@ Script for pretty formated email from zabbix-server, with graph. Used adaptive m
 
 1. Install python3.
 1. Install python extensions: 
-	* pip install py-zabbix
 	* pip install jinja2
 	* pip install requests
 1. Create Zabbix read-only user for api.
